@@ -2,12 +2,14 @@ import 'dotenv/config';
 import * as exercisesModel from './exercises_model.mjs';
 import express from 'express';
 import asyncHandler from 'express-async-handler';
+import cors from 'cors';
 
 const PORT = process.env.PORT;
 const ERROR_NOT_FOUND = {Error: 'Not found'}
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.listen(PORT, async () => {
     await exercisesModel.connect(false)
