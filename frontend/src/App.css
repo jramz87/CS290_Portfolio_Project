@@ -1,0 +1,180 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 150px;
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+  font-family: fantasy;
+}
+
+.app {
+  background-color: rgb(20, 20, 20);
+  color: blanchedalmond;
+}
+
+.collection-container {
+  padding: 20px;
+  border: 3px solid blanchedalmond;
+  border-radius: 8px;
+  width: 600px;
+  margin-top: 16px;
+  background-color:darkslateblue;
+  font-size: 1.1rem;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+}
+
+.modExercise {
+  background-color: darkslateblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-radius: 5mm;
+  border: 3px solid blanchedalmond;
+}
+
+a {
+  color: plum;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgb(20, 20, 20);
+}
+
+header h1 {
+  padding: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color:  palevioletred;
+  text-shadow: 3px 3px 3px rgb(102, 87, 196);
+  text-decoration: underline 1.5px;
+}
+
+header p {
+  color: silver;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+nav {
+  position: fixed;
+  top: 0.5;
+  left: 0;
+  right: 0;
+  background-color: rgb(20, 20, 20);
+  padding: 2px;
+}
+
+nav a {
+  padding: 0.15em 2em;
+  background-color:rgb(182, 138, 182);
+  text-decoration: none;
+  color: rgb(68, 32, 68);
+  font-size: 1.3em;
+  margin: 0 10px;
+  font-family: cursive;
+  border-radius: 6mm;
+  box-shadow: 0 4px 8px  rgb(102, 87, 196);
+}
+
+nav a:hover {
+  background-color: rgb(68, 32, 68);
+  color: rgb(182, 138, 182);
+  box-shadow: 0 4px 8px rgb(218, 79, 4);
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 25px;
+}
+
+h2 {
+  color:  plum;
+}
+
+p {
+  color: silver;
+}
+
+table {
+  table-layout: fixed;
+  border-spacing: 15px 15px;
+  background-color: darkslateblue;
+}
+
+th {
+  color: blanchedalmond;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-bottom: 2px solid plum;
+}
+
+td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+tr {
+  color: silver;
+}
+
+.dateInTable {
+  width: 20%;
+}
+
+button {
+  background-color: indianred;
+  color: blanchedalmond;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(218, 79, 4);
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  border: 2px solid plum;
+  border-radius: 4px;
+  background-color: rgba(255, 235, 205, 0.1);
+  color: silver;
+  margin-left: 10px;
+}
+
+.VscButton:hover {
+  color: rgb(218, 79, 4);
+  cursor: pointer;
+}
+
+.VscButton {
+  font-size: 1.1rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid plum;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
