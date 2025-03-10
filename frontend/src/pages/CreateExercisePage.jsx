@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { VscSave } from "react-icons/vsc";
+import { createExercise } from '../api.js'; // Import the API function
 
 export const CreateExercisePage = () => {
 
@@ -18,21 +19,17 @@ export const CreateExercisePage = () => {
             reps: Number(reps), 
             weight: Number(weight), 
             unit: unit, 
-            date: date};
-
-        const response = await fetch(
-            `/exercises`, {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(newExercise)
-                }
-        );
-        if (response.status === 201) {
-            alert('Exercise added successfully');
-        } else {
-            alert(`Failed to add exercise, status code: ${response.status}`);
+            date: date
         };
-        navigate('/');
+
+        try {
+            const result = await createExercise(newExercise);
+            alert('Exercise added successfully');
+            navigate('/');
+        } catch (error) {
+            console.error('Error adding exercise:', error);
+            alert(`Failed to add exercise: ${error.message}`);
+        }
     };
 
     return (

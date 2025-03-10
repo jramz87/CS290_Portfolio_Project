@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import ExerciseTable from '../components/ExerciseTable';
 import { useEffect, useState } from 'react';
 import { VscAdd } from "react-icons/vsc";
+import { fetchExercises, deleteExercise } from '../api.js'; // Import the API functions
 
 function HomePage({setExerciseToEdit}) {
 
@@ -15,21 +16,25 @@ function HomePage({setExerciseToEdit}) {
     const navigate = useNavigate();
 
     const loadExercises = async () => {
-        const response = await fetch('/exercises');
-        const data = await response.json();
-        setExercises(data);
+        try {
+            const data = await fetchExercises();
+            setExercises(data);
+        } catch (error) {
+            console.error('Error loading exercises:', error);
+            alert('Failed to load exercises. Please try again later.');
+        }
     };
 
     const onDelete = async (_id) => {
-        const response = await fetch(
-            `/exercises/${_id}`,
-            {method: 'DELETE'}
-        );
-        if (response.status === 204) {
-            setExercises(exercises.filter(e => e._id !== _id))
-        } else {
-            alert(`Failed to delete exercise with id: ${_id}, status code: ${response.status}`);
-        };
+        try {
+            const success = await deleteExercise(_id);
+            if (success) {
+                setExercises(exercises.filter(e => e._id !== _id));
+            }
+        } catch (error) {
+            console.error('Error deleting exercise:', error);
+            alert(`Failed to delete exercise with id: ${_id}`);
+        }
     };
 
     const onEdit = (exercise) => {

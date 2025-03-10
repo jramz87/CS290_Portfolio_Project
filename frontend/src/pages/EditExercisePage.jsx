@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { VscSave } from "react-icons/vsc";
+import { updateExercise } from '../api.js'; // Import the API function
 
 export const EditExercisePage = ({exerciseToEdit}) => {
 
@@ -18,21 +19,17 @@ export const EditExercisePage = ({exerciseToEdit}) => {
             reps: Number(reps), 
             weight: Number(weight), 
             unit: unit, 
-            date: date};
-
-        const response = await fetch(
-            `/exercises/${exerciseToEdit._id}`, {
-                method: 'PUT',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify(editedExercise)
-                }
-        );
-        if (response.status === 200) {
-            alert('Exercise edited successfully');
-        } else {
-            alert(`Failed to edit exercise, status code: ${response.status}`);
+            date: date
         };
-        navigate('/');
+
+        try {
+            await updateExercise(editedExercise, exerciseToEdit._id);
+            alert('Exercise edited successfully');
+            navigate('/');
+        } catch (error) {
+            console.error('Error updating exercise:', error);
+            alert(`Failed to edit exercise: ${error.message}`);
+        }
     };
 
     return (
