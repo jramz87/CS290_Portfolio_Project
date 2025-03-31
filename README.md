@@ -131,9 +131,7 @@ The frontend development server will run on port 5173 (http://localhost:5173).
 
 ## 📜 License
 
-![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under ![MIT License](https://img.shields.io/badge/License-MIT-green.svg) - see the LICENSE file for details.
 
 ## 📫 Connect
 
