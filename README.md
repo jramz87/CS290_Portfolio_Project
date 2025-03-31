@@ -4,7 +4,9 @@ A full-stack web application that allows users to track their exercise activitie
 
 ## 📸 Preview
 
-<img src="./utils/screenshots/homepage.png" alt="Website Homepage" width="700" />
+<div style="width: 400px; height: 600px; overflow: hidden; border: 1px solid #ddd; border-radius: 8px;">
+  <img src="./utils/screenshots/homepage.png" alt="Website Homepage" width="700" />
+</div>
 
 > **Note:** This project was developed with styling constraints as part of academic requirements. Only vanilla CSS was permitted (no Bootstrap, Tailwind, or other CSS frameworks), which influenced the visual design.
 
