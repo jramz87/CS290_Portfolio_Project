@@ -1,0 +1,12 @@
+{
+  "name": "exercise-tracker-screenshots",
+  "version": "1.0.0",
+  "description": "Screenshot utility for Exercise Tracker app",
+  "main": "screenshot.js",
+  "scripts": {
+    "screenshot": "node ./utils/screenshots.js"
+  },
+  "dependencies": {
+    "puppeteer": "^19.7.2"
+  }
+}
