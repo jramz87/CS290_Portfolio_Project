@@ -107,6 +107,7 @@ MONGODB_CONNECT_STRING=<your-mongodb-connection-string>
 # Start the server
 npm start
 ```
+The backend server will run on port 3000 (http://localhost:3000).
 
 ### Frontend Setup
 ```bash
@@ -119,6 +120,7 @@ npm install
 # Start the development server
 npm run dev
 ```
+The frontend development server will run on port 5173 (http://localhost:5173).
 
 ## 💡 Future Improvements
 
@@ -135,6 +137,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📫 Connect
 
-Feel free to reach out if you have questions or would like to collaborate!
+Feel free to reach out if you have questions or would like to collaborate!                          
 [![Email](https://img.shields.io/badge/Email-jramz1897%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jramz1897@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-jramz87.github.io-blue?style=for-the-badge&logo=github&logoColor=white)](https://jramz87.github.io/)
