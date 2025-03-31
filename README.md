@@ -1,6 +1,6 @@
 # Exercise Tracker - MERN Stack Application
 
-A full-stack web application that allows users to track their exercise activities. Built with the MERN stack (MongoDB, Express, React, Node.js) and hosted on Render.com.
+A full-stack web application that allows users to track their exercise activities. Built with the MERN stack (MongoDB, Express, React, Node.js) and hosted on Render.com. Developed as a portfolio project for CS290 (Web Development) at Oregon State University, Winter 2025.
 
 ## 📸 Preview
 
