@@ -4,7 +4,7 @@ A full-stack web application that allows users to track their exercise activitie
 
 ## 📸 Preview
 
-<div style="width: 400px; height: 600px; overflow: hidden; border: 1px solid #ddd; border-radius: 8px;">
+<div style="width: 300px; height: 500px; overflow: hidden; border: 1px solid #ddd; border-radius: 8px;">
   <img src="./utils/screenshots/homepage.png" alt="Website Homepage" width="700" />
 </div>
 
