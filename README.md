@@ -12,7 +12,7 @@ A full-stack web application that allows users to track their exercise activitie
 
 ## 🌐 Live Demo
 
-[Exercise Tracker App](https://exercise-tracker-frontend-dur0.onrender.com/)
+Check it out here: [Exercise Tracker App](https://exercise-tracker-frontend-dur0.onrender.com/)
 
 > **Note:** This application is hosted on Render's free tier, which puts applications to sleep after 15 minutes of inactivity. When you first connect to the application after this idle period, there will be a delay of approximately 2-3 minutes as the server "wakes up" and retrieves data from MongoDB Atlas. Once awakened, the application will perform normally until it goes back to sleep after another period of inactivity.
 
