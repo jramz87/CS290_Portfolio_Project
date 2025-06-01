@@ -2,7 +2,7 @@
 
 A full-stack web application that allows users to track their exercise activities. Built with the MERN stack (MongoDB, Express, React, Node.js) and hosted on Render.com. Developed as a portfolio project for CS290 (Web Development) at Oregon State University, Winter 2025.
 
-## 📸 Preview
+## Preview
 
 <div style="width: 300px; height: 500px; overflow: hidden; border: 1px solid #ddd; border-radius: 8px;">
   <img src="./utils/screenshots/homepage.png" alt="Website Homepage" width="700" />
@@ -10,20 +10,20 @@ A full-stack web application that allows users to track their exercise activitie
 
 > **Note:** This project was developed with styling constraints as part of academic requirements. Only vanilla CSS was permitted (no Bootstrap, Tailwind, or other CSS frameworks), which influenced the visual design.
 
-## 🌐 Live Demo
+## Live Demo
 
 Check it out here: [Exercise Tracker App](https://exercise-tracker-frontend-dur0.onrender.com/)
 
 > **Note:** This application is hosted on Render's free tier, which puts applications to sleep after 15 minutes of inactivity. When you first connect to the application after this idle period, there will be a delay of approximately 2-3 minutes as the server "wakes up" and retrieves data from MongoDB Atlas. Once awakened, the application will perform normally until it goes back to sleep after another period of inactivity.
 
-## ✨ Features
+## Features
 
 - **Create**: Add new exercises with details including name, reps, weight, unit of measurement, and date
 - **Read**: View all exercises in a table format
 - **Update**: Edit existing exercise details
 - **Delete**: Remove exercises from the database
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -42,7 +42,7 @@ Check it out here: [Exercise Tracker App](https://exercise-tracker-frontend-dur0
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 ![MongoDB Atlas](https://img.shields.io/badge/MongoDB%20Atlas-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-## 📋 Data Model
+## Data Model
 
 Each exercise in the database has the following properties:
 
@@ -54,7 +54,7 @@ Each exercise in the database has the following properties:
 | unit | String | The unit of measurement ('kgs' or 'lbs') |
 | date | String | The date the exercise was performed (MM-DD-YY format) |
 
-## 🚀 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 | ------ | -------- | ----------- |
@@ -64,7 +64,7 @@ Each exercise in the database has the following properties:
 | PUT | /exercises/:_id | Update an existing exercise |
 | DELETE | /exercises/:_id | Delete an exercise |
 
-## 🖥️ Application Structure
+## Application Structure
 
 ### Frontend Pages
 1. **Home Page**: Displays all exercises in a table with options to edit or delete
@@ -77,7 +77,7 @@ Each exercise in the database has the following properties:
 - Exercise Row component
 - Exercise Form components
 
-## 📦 Installation and Setup
+## Installation and Setup
 
 ### Prerequisites
 - Node.js
@@ -122,18 +122,18 @@ npm run dev
 ```
 The frontend development server will run on port 5173 (http://localhost:5173).
 
-## 💡 Future Improvements
+## Future Improvements
 
 - User authentication
 - Exercise categories
 - Progress tracking and statistics
 - Mobile application
 
-## 📜 License
+## License
 
 This project is licensed under ![MIT License](https://img.shields.io/badge/License-MIT-green.svg) - see the LICENSE file for details.
 
-## 📫 Connect
+## Connect
 
 Feel free to reach out if you have questions or would like to collaborate!                          
 [![Email](https://img.shields.io/badge/Email-jramz1897%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jramz1897@gmail.com)
